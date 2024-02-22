@@ -1,4 +1,4 @@
-#Every model represents a table in a database
+
 from sqlalchemy import Column, Integer, String, Boolean,ForeignKey
 from sqlalchemy import relationship
 from sqlalchemy.sql.expression import text

@@ -8,8 +8,6 @@ router = APIRouter(
     tags = "Users"
 )
 
-#install email-validator with pip istall email-validator
-#install passlib with pip install passlib[bcrypt]
 @router.post("/", status_code=status.HTTP_201_CREATED, response_model: schemas.UserOut)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
 
